@@ -1,0 +1,48 @@
+.header {
+    color: rgb(21, 196, 21);
+    display: flex;
+    @media (max-width:640px) {
+        display: inline;
+    }
+    p {
+        margin-left: 3%;
+    }
+    a {
+        color: rgb(21, 196, 21);
+        text-decoration: none;
+        font-weight: 900;
+    }
+    &-head {
+        margin-left: 2%;
+        margin-right: 3%;
+        width: 100%;
+        @media (max-width:640px) {
+            font-size: 70%;
+        }
+        p {
+            margin-top: -2%;
+            margin-left: 5%;
+            font-size: 0.8rem;
+        }
+        svg {
+            margin-bottom: -0.5%;
+        }
+    }
+    &-links {
+        display: flex;
+        flex: 40%;
+        @media (max-width:640px) {
+            font-size: 70%;
+            margin-left: -5%;
+            justify-content: space-evenly;
+        }
+        @media (max-width:1024px) {
+            flex: 80%;
+        }
+    }
+    &-container {
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: rgb(17, 17, 17);
+    }
+}
