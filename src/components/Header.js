@@ -2,6 +2,7 @@ import React from "react"
 import "../assets/styles/header.scss"
 import { Container, Row, Col} from 'reactstrap';
 import { FaHackerNewsSquare  } from "react-icons/fa";
+import { Link } from "react-router-dom"
 
 const Header = () => {
     return(
@@ -13,9 +14,9 @@ const Header = () => {
                         <p>Hacked your news feed since 2020</p>
                     </Col>
                     <Col className="header-links">
-                        <p><a href="/">Latest News</a></p>
-                        <p><a href="/best-news">Best News</a></p>
-                        <p><a href="job">Jobs</a></p>
+                        <p><Link to="/">Latest News</Link></p>
+                        <p><Link to="/best-news">Best News</Link></p>
+                        <p><Link to="/jobs">Jobs</Link></p>
                     </Col>
                 </Row>
             </Container>

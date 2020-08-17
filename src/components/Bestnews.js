@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getBestStory } from "../store/actions/getNews"
 import Moment from 'react-moment';
 import { Container, Row, Col} from 'reactstrap';
+import Header from "./Header"
 
 const Hackernews = () => {
     const dispatch = useDispatch()
@@ -15,11 +16,14 @@ const Hackernews = () => {
 
     return(
         <>
+            <Header />
             <Container className="news-container">
                 <h1 className="news-header">Best handpicked news from us</h1>
                 {news && news.map(news => 
                 <Container className="news">
-                    <p><a href={news.url}>{news.title}</a></p>
+                    <ul>
+                        <p><li><a href={news.url}>{news.title}</a></li></p>
+                    </ul>
                     <Row className="news-content">
                         <Col>
                             <p>by {news.by}</p>

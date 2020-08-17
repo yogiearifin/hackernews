@@ -3,14 +3,15 @@ import { Provider } from "react-redux"
 import './App.css';
 import store from './store';
 import Routers from "./router/router"
-import Header from "./components/Header"
+import { BrowserRouter } from "react-router-dom"
 
 function App() {
   return (
     <Provider store={store}>
       <React.Fragment>
-        <Header />
-        <Routers />
+        <BrowserRouter>
+          <Routers />
+        </BrowserRouter>
       </React.Fragment>
     </Provider>
   );
