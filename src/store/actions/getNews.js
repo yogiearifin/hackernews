@@ -1,8 +1,8 @@
 import axios from 'axios';
 export const baseUrl = 'https://hacker-news.firebaseio.com/v0/';
-export const newStoriesUrl = `${baseUrl}newstories.json?print=pretty&orderBy="$key"&limitToFirst=10`;
-export const bestStoriesUrl = `${baseUrl}beststories.json?print=pretty&orderBy="$key"&limitToFirst=10`;
-export const jobStoriesUrl = `${baseUrl}jobstories.json?print=pretty&orderBy="$key"&limitToFirst=10`;
+export const newStoriesUrl = `${baseUrl}newstories.json?print=pretty&orderBy="$key"&limitToFirst=20`;
+export const bestStoriesUrl = `${baseUrl}beststories.json?print=pretty&orderBy="$key"&limitToFirst=20`;
+export const jobStoriesUrl = `${baseUrl}jobstories.json?print=pretty&orderBy="$key"&limitToFirst=20`;
 export const storyUrl = `${baseUrl}item/`;
 
 export const getStory = () => async dispatch => {

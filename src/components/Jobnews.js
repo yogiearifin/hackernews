@@ -22,7 +22,7 @@ const Hackernews = () => {
                 {news && news.map(news => 
                 <Container className="news">
                     <ul>
-                        <p><li><a href={news.url}>{news.title}</a></li></p>
+                        <p><li><a href={news.url} target="_blank" rel="noreferrer noopener">{news.title}</a></li></p>
                     </ul>
                     <Row className="news-content">
                         <Col>
